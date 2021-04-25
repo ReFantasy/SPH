@@ -5,7 +5,7 @@ ti.init(arch=ti.gpu)
 
 gui = ti.GUI(name=str("TaichiGUI"), res=(600, 600), background_color=0x00456B)
 
-N = 1000
+N = 100
 x = ti.Vector.field(2, dtype=ti.f32, shape=N)  # , needs_grad=True
 mass = ti.field(dtype=ti.f32, shape=N)
 density = ti.field(dtype=ti.f32, shape=N)
